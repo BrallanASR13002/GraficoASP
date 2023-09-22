@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Graficos.Models;
 
-public partial class Ventum
+public partial class Venta
 {
     public int Idventa { get; set; }
 
@@ -21,5 +21,5 @@ public partial class Ventum
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual ICollection<DetalleVentum> DetalleVenta { get; set; } = new List<DetalleVentum>();
+    public virtual ICollection<DetalleVenta> DetalleVenta { get; set; } = new List<DetalleVenta>();
 }

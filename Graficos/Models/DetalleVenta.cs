@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Graficos.Models;
 
-public partial class DetalleVentum
+public partial class DetalleVenta
 {
     public int IddetalleVenta { get; set; }
 
@@ -17,5 +17,5 @@ public partial class DetalleVentum
 
     public decimal? Total { get; set; }
 
-    public virtual Ventum? IdventaNavigation { get; set; }
+    public virtual Venta? IdventaNavigation { get; set; }
 }
