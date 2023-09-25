@@ -4,3 +4,4 @@ asp.net core con mvc
 1) modificacion del controller, del program y configuracion de 
 acceso a la base de datos
 2) metodo para la sicronizarse con la BD
+3) creacion del metodo ResumenVenta
