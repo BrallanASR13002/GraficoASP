@@ -25,7 +25,7 @@ namespace Graficos.Controllers
                                           select new ViewModelVenta
                                           {
                                               Fecha=grupo.Key.ToString("dd/MM/yyyy"),
-                                              Cantidad=grupo.Count().ToString(),
+                                              Cantidad=grupo.Count(),
                                           }).ToList();
             return View();
         }
