@@ -6,11 +6,11 @@ namespace Graficos.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private VentasContext _ventasContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(VentasContext ventasContext)
         {
-            _logger = logger;
+            _ventasContext = ventasContext;
         }
 
         public IActionResult Index()
