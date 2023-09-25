@@ -18,8 +18,10 @@ namespace Graficos.Controllers
         {
             DateTime FechaInicio = DateTime.Now;
             FechaInicio=FechaInicio.AddDays(-5);
-            List<ViewModelVenta> Lista= (from tbventa in _ventasContext.Venta
-                                         );
+            List<ViewModelVenta> Lista = (from tbventa in _ventasContext.Venta
+                                          where tbventa.FechaRegistro.Value.Date >= FechaInicio.Date
+                                          group tbventa by tbventa.FechaRegistro.Value.Date
+                                          into grupo) ;
             return View();
         }
         public IActionResult Index()
