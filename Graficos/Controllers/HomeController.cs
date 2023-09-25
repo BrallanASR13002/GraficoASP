@@ -12,7 +12,10 @@ namespace Graficos.Controllers
         {
             _ventasContext = ventasContext;
         }
-
+        public ActionResult ResumenVenta()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
