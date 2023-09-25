@@ -5,3 +5,4 @@ asp.net core con mvc
 acceso a la base de datos
 2) metodo para la sicronizarse con la BD
 3) creacion del metodo ResumenVenta
+4) configurando la consulta de los datos

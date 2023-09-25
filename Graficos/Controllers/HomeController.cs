@@ -21,7 +21,12 @@ namespace Graficos.Controllers
             List<ViewModelVenta> Lista = (from tbventa in _ventasContext.Venta
                                           where tbventa.FechaRegistro.Value.Date >= FechaInicio.Date
                                           group tbventa by tbventa.FechaRegistro.Value.Date
-                                          into grupo) ;
+                                          into grupo
+                                          select new ViewModelVenta
+                                          {
+                                              Fecha=grupo.Key.ToString("dd/MM/yyyy"),
+                                              Cantidad=grupo.Count().ToString(),
+                                          }).ToList();
             return View();
         }
         public IActionResult Index()
