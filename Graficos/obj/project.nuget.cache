@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WEYksYAg0XMb53FSyAAuFP6ReONXOslLI/vHC9Z0QqPnwwK4hPH44FrpWfhW7B8R9Z1fhe53yLDP4J1XP/VLrA==",
+  "dgSpecHash": "nxj9Q6WSlkSOwZt+ztyI7XWo3fp5ek2RbqU4JcYCl4uItJPkPd/NhNQDl9HO3pQ1ATsqAwGzImLXLZobxiwUIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\Graficos.csproj",
+  "projectFilePath": "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\Graficos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UFG-01\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\UFG-01\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

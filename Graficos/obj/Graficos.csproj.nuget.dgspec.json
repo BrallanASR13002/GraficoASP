@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\Graficos.csproj": {}
+    "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\Graficos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\Graficos.csproj": {
+    "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\Graficos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\Graficos.csproj",
+        "projectUniqueName": "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\Graficos.csproj",
         "projectName": "Graficos",
-        "projectPath": "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\Graficos.csproj",
+        "projectPath": "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\Graficos.csproj",
         "packagesPath": "C:\\Users\\UFG-01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UFG-01\\source\\repos\\SR13002\\Graficos\\Graficos\\obj\\",
+        "outputPath": "C:\\Users\\UFG-01\\source\\repos\\GraficoASP\\Graficos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
