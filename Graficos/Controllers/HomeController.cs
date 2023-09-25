@@ -1,5 +1,7 @@
 ﻿using Graficos.Models;
+using Graficos.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Graficos.Controllers
@@ -16,6 +18,8 @@ namespace Graficos.Controllers
         {
             DateTime FechaInicio = DateTime.Now;
             FechaInicio=FechaInicio.AddDays(-5);
+            List<ViewModelVenta> Lista= (from tbventa in _ventasContext.Venta
+                                         );
             return View();
         }
         public IActionResult Index()
