@@ -14,6 +14,8 @@ namespace Graficos.Controllers
         }
         public ActionResult ResumenVenta()
         {
+            DateTime FechaInicio = DateTime.Now;
+            FechaInicio=FechaInicio.AddDays(-5);
             return View();
         }
         public IActionResult Index()
