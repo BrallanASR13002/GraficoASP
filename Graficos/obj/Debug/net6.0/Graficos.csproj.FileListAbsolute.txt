@@ -352,3 +352,14 @@ C:\Users\UFG-01\source\repos\GraficoASP\Graficos\bin\Debug\net6.0\ru\Microsoft.C
 C:\Users\UFG-01\source\repos\GraficoASP\Graficos\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\UFG-01\source\repos\GraficoASP\Graficos\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\UFG-01\source\repos\GraficoASP\Graficos\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.csproj.AssemblyReference.cache
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.AssemblyInfoInputs.cache
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.AssemblyInfo.cs
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.csproj.CoreCompileInputs.cache
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.RazorAssemblyInfo.cache
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.RazorAssemblyInfo.cs
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.dll
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\refint\Graficos.dll
+C:\Users\Sánchez93\source\repos\cds\Graficos\GraficoASP\Graficos\obj\Debug\net6.0\Graficos.pdb

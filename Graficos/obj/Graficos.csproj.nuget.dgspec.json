@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {}
+    "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {
+    "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
+        "projectUniqueName": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
         "projectName": "Graficos",
-        "projectPath": "c:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
+        "projectPath": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
         "packagesPath": "C:\\Users\\Sánchez93\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\obj\\",
+        "outputPath": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sánchez93\\AppData\\Roaming\\NuGet\\NuGet.Config",
