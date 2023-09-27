@@ -29,7 +29,7 @@ namespace Graficos.Controllers
                                           }).ToList();
             return StatusCode(200, Lista);
         }
-        public ActionResult ResumenProductos()
+        public ActionResult ResumenProducto()
         {
             List<ViewModelProducto> Lista = (from tbdetalleventa in _ventasContext.DetalleVenta
                                              where tbdetalleventa.Cantidad.Value >= 0
