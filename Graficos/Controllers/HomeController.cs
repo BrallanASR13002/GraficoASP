@@ -27,7 +27,11 @@ namespace Graficos.Controllers
                                               Fecha=grupo.Key.ToString("dd/MM/yyyy"),
                                               Cantidad=grupo.Count(),
                                           }).ToList();
-            return View();
+            return StatusCode(StatusCode.Status200Ok,Lista);
+        }
+        public ActionResult ResumenProductos()
+        {
+            List<ViewModelProduco> Lista=(from tddetalle ventain _ventasContext.Detall);
         }
         public IActionResult Index()
         {
