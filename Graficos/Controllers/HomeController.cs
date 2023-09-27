@@ -24,14 +24,24 @@ namespace Graficos.Controllers
                                           into grupo
                                           select new ViewModelVenta
                                           {
-                                              Fecha=grupo.Key.ToString("dd/MM/yyyy"),
-                                              Cantidad=grupo.Count(),
+                                              Fecha = grupo.Key.ToString("dd/MM/yyyy"),
+                                              Cantidad= grupo.Count(),
                                           }).ToList();
-            return StatusCode(StatusCode.Status200Ok,Lista);
+            return StatusCode(200, Lista);
         }
         public ActionResult ResumenProductos()
         {
-            List<ViewModelProduco> Lista=(from tddetalle ventain _ventasContext.Detall);
+            List<ViewModelProducto> Lista = (from tbdetalleventa in _ventasContext.DetalleVenta
+                                             where tbdetalleventa.Cantidad.Value >= 0
+                                             group tbdetalleventa by tbdetalleventa.NombreProducto
+                                           into grupo
+                                             select new ViewModelProducto
+                                             {
+                                                 Producto = grupo.Key.ToString(),
+                                                 Cantidad = grupo.Count()
+                                             }
+                                           ).ToList();
+            return StatusCode(200, Lista);
         }
         public IActionResult Index()
         {
