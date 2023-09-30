@@ -27,21 +27,20 @@ namespace Graficos.Controllers
                                               Fecha = grupo.Key.ToString("dd/MM/yyyy"),
                                               Cantidad= grupo.Count(),
                                           }).ToList();
-            return StatusCode(200, Lista);
+            return StatusCode(StatusCodes.Status200OK, Lista);
         }
         public ActionResult ResumenProducto()
         {
             List<ViewModelProducto> Lista = (from tbdetalleventa in _ventasContext.DetalleVenta
-                                             where tbdetalleventa.Cantidad.Value >= 0
-                                             group tbdetalleventa by tbdetalleventa.NombreProducto
-                                           into grupo
+                                             group tbdetalleventa by tbdetalleventa.NombreProducto into grupo
+                                             orderby grupo.Count() descending
                                              select new ViewModelProducto
                                              {
-                                                 Producto = grupo.Key.ToString(),
-                                                 Cantidad = grupo.Count()
-                                             }
-                                           ).ToList();
-            return StatusCode(200, Lista);
+                                                 Producto = grupo.Key,
+                                                 Cantidad = grupo.Count(),
+                                             }).Take(5).ToList();
+
+            return StatusCode(StatusCodes.Status200OK, Lista);
         }
         public IActionResult Index()
         {

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandra Madriz\\source\\repos\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {}
+    "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandra Madriz\\source\\repos\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {
+    "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandra Madriz\\source\\repos\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
+        "projectUniqueName": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
         "projectName": "Graficos",
-        "projectPath": "C:\\Users\\Alexandra Madriz\\source\\repos\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
-        "packagesPath": "C:\\Users\\Alexandra Madriz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandra Madriz\\source\\repos\\Graficos\\GraficoASP\\Graficos\\obj\\",
+        "projectPath": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\Graficos.csproj",
+        "packagesPath": "C:\\Users\\Sánchez93\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sánchez93\\source\\repos\\cds\\Graficos\\GraficoASP\\Graficos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alexandra Madriz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sánchez93\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

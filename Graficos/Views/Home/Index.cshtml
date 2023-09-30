@@ -5,45 +5,48 @@
 <div class="row mt-2">
     <div class="col sm-6">
         <div class="card">
-            <div class="card-header">Ventas de los ultimos 5 dias</div>
+            <div class="card-header">Ventas de los últimos 5 días</div>
             <div class="card-body">
                 <canvas id="chartVentas" style="max-height:250px"></canvas>
             </div>
         </div>
-
     </div>
     <div class="col sm-6">
         <div class="card">
-            <div class="card-header">Producto mayor vendido</div>
+            <div class="card-header">Productos mayor vendidos</div>
             <div class="card-body">
                 <canvas id="chartProductos" style="max-height:250px"></canvas>
             </div>
         </div>
-
     </div>
 </div>
 
 @section Scripts{
     <script>
-        function ResumenVenta (){
-            fetch("Home/Resumenventa") //esta parte del codigo nos esta permitiendo sincronizar el controlador con este apartado
-            //las promesas sirven como las condicionales
+        function ResumenVenta() {
+            fetch("Home/ResumenVenta")
                 .then((response) => {
-                    return response.ok ? response.json() : promise.reject(response);
+                    return response.ok? response.json() : Promise.reject(response);
                 })
                 .then((dataJson) => {
-                    const labels = dataJson.map((item) => {return item.fecha })
-                    const values = dataJson.map((item) => {return item.cantidad })
+                    const labels = dataJson.map((item) => { return item.fecha })
+                    const values = dataJson.map((item) => { return item.cantidad })
                     const data = {
                         labels: labels,
                         datasets: [{
                             label: 'Cantidad',
                             data: values,
-                            data: [65, 59, 80, 81, 56, 55, 40],
-                            backgroundColor: 'rgba(255, 205, 86, 0.2)',
-                             borderWidth: 1
+                            backgroundColor: [
+                                'rgb(123, 999, 234)',
+                                'rgb(2504, 200, 23)',
+                                'rgb(125, 040, 200)',
+                                'rgb(011, 010, 202)',
+                                'rgb(143, 456, 234)',
+                                'rgb(123, 101, 125)'
                             ],
-                           
+                            borderWidth: 1
+                        }]
+                    };
                     const config = {
                         type: 'bar',
                         data: data,
@@ -55,9 +58,45 @@
                             }
                         },
                     };
-                    const canvasBarras = document.getElementById("chartVentas")
+                    const canvasBarras = document.getElementById("chartVentas");
                     const graficoBarras = new Chart(canvasBarras, config);
                 })
         }
+        function ResumenProducto() {
+            fetch("Home/ResumenProductos")
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response);
+                })
+                .then((dataJson) => {
+                    const labels = dataJson.map((item) => { return item.producto })
+                    const values = dataJson.map((item) => { return item.cantidad })
+                    const data = {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Cantidad',
+                            data: values,
+                            backgroundColor: [
+                                'rgb(123, 999, 234)',
+                                'rgb(255, 205, 86)',
+                                'rgb(54, 162, 235)',
+                                'rgb(011, 201, 22 )',
+                                'rgb(254, 010, 2001 )'
+                                
+                            ],
+                            hoverOffset: 4
+                        }]
+                    };
+                    const config = {
+                        type: 'doughnut',
+                        data: data,
+                    };
+                    const canvasDona = document.getElementById("chartProductos");
+                    const graficoDona= new Chart(canvasDona, config);
+                })
+        }
+        $(document).ready(() => {
+            ResumenVenta()
+            ResumenProducto()
+        })
     </script>
 }
